@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Змейка - СМЕХОТА</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="crazy-header">
+            <h1>🐍 Змейка от СМЕХОТЫ 🐍</h1>
+            <p>Самая смешная змейка в мире!</p>
+        </header>
+
+        <div class="game-section">
+            <div class="game-info">
+                <p>Счёт: <span id="score">0</span></p>
+                <button onclick="resetGame()">Начать заново</button>
+            </div>
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            <p>Управление: стрелки ← ↑ → ↓</p>
+        </div>
+
+        <nav class="crazy-nav">
+            <a href="index.html" class="nav-btn">Главная</a>
+    <a href="snake.html" class="nav-btn">Играть в Змейку</a>
+    <a href="donate.html" class="nav-btn">Поддержать нас</a>
+    <a href="chat.html" class="nav-btn">Чат 💬</a>        
+</nav>
+    </div>
+    <script src="snake.js"></script>
+</body>
+</html>
