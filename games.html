@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мини-Игры - СМЕХОТА</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="crazy-header">
+            <h1>🎮 МИНИ-ИГРЫ СМЕХОТЫ</h1>
+            <p>Выбирай игру и веселись!</p>
+        </header>
+
+        <div class="games-section">
+            <!-- Выбор игры -->
+            <div class="game-selector">
+                <button onclick="showGame('dice')" class="game-btn">🎲 Бросок кубика</button>
+                <button onclick="showGame('coin')" class="game-btn">🪙 Орел/Решка</button>
+                <button onclick="showGame('random')" class="game-btn">🎯 Случайный выбор</button>
+                <button onclick="showGame('timer')" class="game-btn">⏱️ Таймер</button>
+                <button onclick="showGame('number')" class="game-btn">🔢 Угадай число</button>
+                <button onclick="showGame('rps')" class="game-btn">✂️ Камень-Ножницы-Бумага</button>
+            </div>
+
+            <!-- Область игры -->
+            <div id="gameArea" class="game-area">
+                <div class="welcome-message">
+                    <h2>🎪 Выбери игру выше! 🎪</h2>
+                    <p>Все игры абсолютно бесплатные и очень смешные!</p>
+                </div>
+            </div>
+
+            <!-- Статистика -->
+            <div class="game-stats">
+                <h3>📊 Статистика побед:</h3>
+                <div id="statsDisplay"></div>
+            </div>
+        </div>
+
+        <nav class="crazy-nav">
+            <a href="index.html" class="nav-btn">Главная</a>
+            <a href="snake.html" class="nav-btn">Играть в Змейку</a>
+            <a href="donate.html" class="nav-btn">Поддержать нас</a>
+            <a href="games.html" class="nav-btn">Мини-Игры 🎮</a>
+        </nav>
+    </div>
+
+    <script src="games.js"></script>
+</body>
+</html>
